@@ -70,7 +70,7 @@
         </div> --}}
         <div class="login-box mt-5 pt-5">
             <div class="login-logo">
-              <a href="/"><i class="fas fa-leaf"></i><b>Admin</b>LTE</a>
+              <h5 class="lead text-dark"><i class="fas fa-leaf"></i> Employee Information System</h5>
             </div>
             <!-- /.login-logo -->
             <div class="card">

@@ -1,5 +1,14 @@
 #login-main-box {
     background: url('../image/undraw_empty_street.png')no-repeat bottom center;
-    background-size: 100%;
+    background-size: 60%;
     height: 100%;
+}
+
+.welcome-wrapper {
+    background: url('../image/undraw_good_team.png')no-repeat bottom center;
+    background-size: 30%;
+}
+
+#welcome-content {
+    background-color: #eaeaea;
 }
