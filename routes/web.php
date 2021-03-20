@@ -28,7 +28,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['middleware' => 'auth'], function() {
 
-    
+    Route::resource('personal_details', PersonalDetailController::class);
 
 
 
