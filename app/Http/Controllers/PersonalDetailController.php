@@ -14,7 +14,8 @@ class PersonalDetailController extends Controller
      */
     public function index()
     {
-        //
+        $page_title = "Personal Details";
+        return view('pages.personal_details.index', compact('page_title'));
     }
 
     /**

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\PersonalDetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,7 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::get('home', 'DashboardController@index');
     Route::get('dashboard', 'DashboardController@index');
+    // Route::get('personal_details', 'PersonalDetailController@index');
     Route::resource('personal_details', PersonalDetailController::class);
 
 

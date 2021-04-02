@@ -8,6 +8,11 @@
 
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="bower_components/admin-lte/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="bower_components/admin-lte/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -24,7 +29,7 @@
       <div class="container-fluid">
           <div class="row mb-2">
           <div class="col-sm-6">
-              <h1 class="m-0">{{ $page_title ?? 'Page Title' }}</h1>
+              <h1 class="m-0">{{ $page_title ?? '' }}</h1>
           </div><!-- /.col -->
           {{-- <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
@@ -61,5 +66,7 @@
 <!-- REQUIRED SCRIPTS -->
 
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="bower_components/admin-lte/dist/js/adminlte.min.js"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
 </body>
 </html>
