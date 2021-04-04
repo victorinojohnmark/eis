@@ -12,3 +12,12 @@
 #welcome-content {
     background-color: #eaeaea;
 }
+
+.crop-preview {
+    overflow: hidden;
+    width: 230px; 
+    height: 230px;
+    margin: 20px;
+    /* min-height: 100%;
+    min-width: 100%; */
+  }

@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.3",
-        "admin-lte": "^3.0.5"
+        "admin-lte": "^3.0.5",
+        "cropperjs": "^1.5.11"
     }
 }

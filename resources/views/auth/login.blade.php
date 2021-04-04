@@ -80,7 +80,7 @@
                 <form method="POST" action="{{ route('login') }}">
                   @csrf
                   <div class="input-group mb-3">
-                    <input type="text" class="form-control @error('username') is-invalid @enderror" name="username" placeholder="Usename" required>
+                    <input type="text" class="form-control @error('username') is-invalid @enderror" name="username" placeholder="Username" required>
                     <div class="input-group-append">
                       <div class="input-group-text">
                         <span class="fas fa-user"></span>

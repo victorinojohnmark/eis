@@ -4,15 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ config('app.name', 'Laravel ') }} {{ $page_title ?? '' }}</title>
+  <title>{{ config('app.name', 'Laravel ') }} {{ isset($page_title) ? '|' : '' }} {{ $page_title ?? '' }}</title>
 
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="bower_components/admin-lte/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/bower_components/admin-lte/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="bower_components/admin-lte/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/bower_components/admin-lte/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/bower_components/cropperjs/dist/cropper.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -23,7 +24,7 @@
     
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper @guest{{ "ml-0" }}@endguest">
+  <div class="content-wrapper p-2 @guest{{ "ml-0" }}@endguest">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -66,7 +67,8 @@
 <!-- REQUIRED SCRIPTS -->
 
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="bower_components/admin-lte/dist/js/adminlte.min.js"></script>
+<script src="/bower_components/admin-lte/dist/js/adminlte.min.js"></script>
+<script src="/bower_components/cropperjs/dist/cropper.min.js"></script>
 <script src="{{ asset('js/custom.js') }}"></script>
 </body>
 </html>
